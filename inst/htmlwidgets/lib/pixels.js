@@ -115,8 +115,8 @@ function Pixels() {
 
   var setPixelFromMouse = function(e, left, top) {
     var rect = canvas.getBoundingClientRect();
-    var pixelX = Math.floor(1.0 * gridX * (e.clientX - rect.left) / (width / 2));
-    var pixelY = Math.floor(1.0 * gridY * (e.clientY - rect.top) / (height / 2));
+    var pixelX = Math.floor(1.0 * gridX * (e.clientX - rect.left) / (rect.right - rect.left));
+    var pixelY = Math.floor(1.0 * gridY * (e.clientY - rect.top) / (rect.bottom - rect.top));
 
     var offsetY = Math.floor(brush.length / 2);
     for (var br = 0; br < brush.length; br++) {
@@ -126,7 +126,7 @@ function Pixels() {
         var c = pixelX - offsetX + bc;
         
         if (r >= 0 && r < gridX && c >= 0 && c < gridY && brush[br][bc]) {
-          pixels[r][c] += brush[br][bc];
+          pixels[r][c] = Math.min(1.0, pixels[r][c] + brush[br][bc]);
         }
       }
     }

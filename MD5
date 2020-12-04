@@ -1,12 +1,12 @@
-5a693a680a509185fb6a3918d42ef9ac *DESCRIPTION
+f97b5d5a72d227e7dc0ced0f9b5634c5 *DESCRIPTION
 f55e9a1b92b63eeebbd2b8da41f8e8ea *LICENSE
 4dedf2750e28579ac491b9eef24234c5 *NAMESPACE
 dbb37de05c76247a436fd1e5ef38a3f0 *R/get.R
 372068a3af9819b0c23c7ab72bf60d13 *R/pixels.R
 99d8640623c91c59b54793ab84665a41 *R/shiny.R
 c7249f06f76e3c8ae23692e60c838a42 *R/show.R
-7e3cc4b36b138fa8d3c4743b8e233776 *README.md
-95b8ab675b54c758fab59a590cd58b02 *inst/htmlwidgets/lib/pixels.js
+6959fbe21372416a62b308674e3014d3 *README.md
+87a595ee2dd39cc594fa0ba33c42abb4 *inst/htmlwidgets/lib/pixels.js
 a71fa6af4a15d735ad91f5b2f1bb3452 *inst/htmlwidgets/pixels.js
 2f21c560ba23bc8eef36e022dad46983 *inst/htmlwidgets/pixels.yaml
 9a342ac0ae19434b44e48578cae84c13 *man/get_pixels.Rd
